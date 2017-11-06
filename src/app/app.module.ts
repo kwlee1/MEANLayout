@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { MainComponent } from './main/main.component';
+import { FormsModule } from '@angular/forms'; //newly added
+import { HttpModule } from '@angular/http'; //newly added
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MainComponent } from './main/main.component';
     MainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule, //newly added
+    HttpModule //newly added
   ],
   providers: [],
   bootstrap: [AppComponent]
